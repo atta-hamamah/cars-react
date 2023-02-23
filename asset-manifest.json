@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cars-react-new/static/css/main.ccbbdafb.css",
-    "main.js": "/cars-react-new/static/js/main.49c86390.js",
+    "main.css": "/cars-react-new/static/css/main.587c100e.css",
+    "main.js": "/cars-react-new/static/js/main.ffeae921.js",
     "static/media/2.png": "/cars-react-new/static/media/2.728c051d203ae08d9eb1.png",
     "static/media/7.png": "/cars-react-new/static/media/7.853892a453ff0f4cb988.png",
     "static/media/3.png": "/cars-react-new/static/media/3.6381cf2bac4ffbec35e3.png",
@@ -15,11 +15,11 @@
     "static/media/11.png": "/cars-react-new/static/media/11.0a16e0de72a5b214775e.png",
     "static/media/12.png": "/cars-react-new/static/media/12.9a9227fff3c5879458cd.png",
     "index.html": "/cars-react-new/index.html",
-    "main.ccbbdafb.css.map": "/cars-react-new/static/css/main.ccbbdafb.css.map",
-    "main.49c86390.js.map": "/cars-react-new/static/js/main.49c86390.js.map"
+    "main.587c100e.css.map": "/cars-react-new/static/css/main.587c100e.css.map",
+    "main.ffeae921.js.map": "/cars-react-new/static/js/main.ffeae921.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccbbdafb.css",
-    "static/js/main.49c86390.js"
+    "static/css/main.587c100e.css",
+    "static/js/main.ffeae921.js"
   ]
 }
