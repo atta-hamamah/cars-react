@@ -3,6 +3,7 @@ import { AiOutlineHeart } from 'react-icons/ai';
 import { AiFillHeart } from 'react-icons/ai';
 import { TiArrowSyncOutline } from 'react-icons/ti';
 import { MdPersonOutline } from 'react-icons/md';
+import {Context} from "../contexts/Context"
 
 function Card(props) {
     // toggle red and gray heart
@@ -10,6 +11,7 @@ function Card(props) {
     function favr(){
         setVaf((prev)=>!prev)
     }
+
 
   return (
     <div className='bg-white p-1 sm:p-5 rounded-xl'>

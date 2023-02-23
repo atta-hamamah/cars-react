@@ -2,6 +2,7 @@ import React from 'react'
 import Card from './Card';
 import { RxDashboard } from 'react-icons/rx';
 import {AiOutlineControl} from 'react-icons/ai';
+import {Context} from "../contexts/Context"
 import img1 from '../imgs/1.png';
 import img2 from '../imgs/2.png';
 import img3 from '../imgs/3.png';
@@ -17,20 +18,7 @@ import img9 from '../imgs/9.png';
 
 function Booking() {
   
-  const [formData, setFormData] = React.useState(
-    {
-        carStatus: "",
-        carType: ""
-    })
-  function handleChange(event) {
-    setFormData(prev => {
-      const {name, value} = event.target
-        return {
-            ...prev,
-            [name]: value
-        }
-    })
-  }
+  const {bookData, bookChange} = React.useContext(Context)
 
   return (
     <div className='w-full bg-gray-100 p-2 md:p-6 '>
@@ -38,8 +26,8 @@ function Booking() {
       <div className='flex justify-between items-center w-full mb-4 '>
         <form>
         <select className='rounded-2xl mr-2'
-                value={formData.carStatus}
-                onChange={handleChange}
+                value={bookData.carStatus}
+                onChange={bookChange}
                 name="carStatus"
             >
                 <option value="">Status</option>
@@ -48,8 +36,8 @@ function Booking() {
                 <option value="old">old</option>
             </select>
         <select className='rounded-2xl'
-                value={formData.carType}
-                onChange={handleChange}
+                value={bookData.carType}
+                onChange={bookChange}
                 name="carType"
             >
                 <option value="">Type</option>
@@ -59,10 +47,6 @@ function Booking() {
                 <option value="porsche">PORSCHE</option>
             </select>
         </form>
-        <div className='flex justify-center items-center'>
-          <RxDashboard className='mr-2 rounded-full text-lg w-8 h-8 text-gray-800 bg-white p-2 '/>
-          <AiOutlineControl className='bg-p rounded-full text-white text-lg w-8 h-8 bg-purple-600 p-2'/>
-        </div>
       </div>
       <div className='grid gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-6 '>
         <Card url={img1}/>
