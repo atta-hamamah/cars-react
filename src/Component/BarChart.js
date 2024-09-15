@@ -1,6 +1,5 @@
 import React from 'react'
 import { Bar } from "react-chartjs-2"
-import { Chart as ChartJS } from "chart.js/auto"
 
 function BarChart() {
     const Data = {
@@ -15,7 +14,7 @@ function BarChart() {
         ],
         datasets: [
             {
-                data: [110 , 90 , 157 , 80 , 130 , 60 , 100],
+                data: [110, 90, 157, 80, 130, 60, 100],
                 backgroundColor: [
                     "#F4F5F9",
                     "#F4F5F9",
@@ -25,16 +24,16 @@ function BarChart() {
                     "#F4F5F9",
                     "#F4F5F9"
                 ],
-                barThickness:20,
-                hoverBackgroundColor:"#2884FF",
+                barThickness: 20,
+                hoverBackgroundColor: "#2884FF",
             },
         ],
 
     }
 
-  return (
-    <Bar className=' w-full h-full items-stretch' data={Data} />
-  )
+    return (
+        <Bar className=' w-full h-full items-stretch' data={Data} />
+    )
 }
 
 export default BarChart
