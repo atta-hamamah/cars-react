@@ -1,6 +1,5 @@
 import React from 'react'
 import { Line } from "react-chartjs-2"
-import { Chart as ChartJS } from "chart.js/auto"
 
 function LineChart() {
     const Data = {
@@ -16,25 +15,25 @@ function LineChart() {
         ],
         datasets: [
             {
-                data: [30 , 120 , 157 , 80 , 110 , 40 , 60 ,90],
+                data: [30, 120, 157, 80, 110, 40, 60, 90],
                 tension: .5,
-                borderWidth:1,
-                pointBorderWidth:0,
+                borderWidth: 1,
+                pointBorderWidth: 0,
                 borderColor: "#FF764C",
-                fill:{
+                fill: {
                     target: true,
                     above: "rgba(255, 118, 76, 0.40)",
-                } ,
+                },
             },
-            
+
         ],
-        
+
 
     }
 
-  return (
-    <Line  data={Data}/>
-  )
+    return (
+        <Line data={Data} />
+    )
 }
 
 export default LineChart 
